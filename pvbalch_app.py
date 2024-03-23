@@ -122,7 +122,6 @@ class MainApplication(tk.Tk):
         self.results_text.insert(tk.END, f"Melt weight: {melt_weight} ({melt_weight / total_weight * 100:.2f}%)\n")
         sublimates_weight_percentage = sublimates_weight / total_weight * 100
         self.results_text.insert(tk.END, f"Sublimates weight: {sublimates_weight} ({sublimates_weight_percentage:.2f}%)\n")
-        
         self.results_text.insert(tk.END, f"Total weight check: {stein_results['stein_weight'] + slug_results['slag_weight'] + sublimates_weight} ({stein_weight_percentage + slag_weight_percentage + sublimates_weight_percentage:.2f}%)\n")
 
 
